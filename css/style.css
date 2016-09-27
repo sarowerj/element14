@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 27, 2016, 5:13:27 PM
+    Author     : SAROWER
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+p {
+  font-weight: 400;
+  line-height: 22px; }
+
+h1 {
+  font-size: 33px;
+  line-height: 42px;
+  font-weight: 600; }
+  h1 small {
+    font-size: 28px;
+    color: inherit;
+    font-weight: 600; }
+  h1 .text-upper {
+    text-transform: uppercase; }
+
+/*========== Navbar ==========*/
+.navbar {
+  background: transparent;
+  border-radius: 0;
+  border: 0; }
+  .navbar .navbar-collapse {
+    background: #d1eef9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.31); }
+    .navbar .navbar-collapse .nav {
+      margin: 18px 0; }
+      .navbar .navbar-collapse .nav li a {
+        color: #189bc9;
+        font-weight: 600; }
+  .navbar > .container .navbar-brand {
+    margin-left: 15px;
+    height: auto;
+    padding: 30px 30px 30px 15px; }
+
+/*== End Navbar ==*/
+/*========== Main Content ==========*/
+main {
+  margin-top: -110px;
+  padding: 152px 0 50px;
+  background: #0787b5;
+  background: -webkit-linear-gradient(left, #2fbbed, #007fac);
+  background: -o-linear-gradient(right, #2fbbed, #007fac);
+  background: -moz-linear-gradient(right, #2fbbed, #007fac);
+  background: linear-gradient(to right, #2fbbed, #007fac); }
+  main.main_blue_bg {
+    color: white; }
+  main .main_title {
+    margin-bottom: 5px; }
+  main .include_list {
+    margin: 0;
+    padding: 0; }
+    main .include_list li {
+      display: inline-block;
+      width: 48%;
+      padding-left: 20px;
+      background-image: url("../images/bullet.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      line-height: 22px; }
+  main .cad_logo_cont {
+    margin-top: -30px; }
+  main .download_box {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.26); }
+    main .download_box h3 {
+      color: white;
+      background: #e95b1a;
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 24px;
+      color: #e95b1a; }
+    main .download_box .box_content {
+      background: white;
+      padding: 15px;
+      color: #565656; }
+      main .download_box .box_content label {
+        font-size: 15px;
+        color: #e95b1a;
+        font-weight: 400; }
+      main .download_box .box_content .form-control {
+        border-radius: 2px;
+        background: #e95b1a;
+        color: #fdb898; }
+
+/*== End Main Content ==*/
+/*========== Footer ==========*/
+footer {
+  background: #3b3b3b;
+  color: #acacac;
+  padding: 32px 0; }
+  footer p {
+    margin: 0; }
+
+/*== End Footer ==*/
+
+/*# sourceMappingURL=style.css.map */

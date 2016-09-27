@@ -1,0 +1,135 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 27, 2016, 5:13:27 PM
+    Author     : SAROWER
+*/
+
+$orange:#e95b1a;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+}
+p{
+    font-weight: 400;
+    line-height: 22px;
+}
+h1{
+    font-size:33px;
+    line-height:42px;
+    font-weight:600;
+    small{
+        font-size:28px;
+        color: inherit;
+        font-weight:600;
+    }
+    .text-upper{
+        text-transform: uppercase;
+    }
+}
+
+
+/*========== Navbar ==========*/
+.navbar{
+    background:transparent;
+    border-radius: 0;
+    border:0;
+    .navbar-collapse{
+        background:#d1eef9;
+        box-shadow: 0 0 5px rgba(0,0,0,.31);
+        .nav{
+            margin:18px 0;
+            li{
+                a{
+                    color:#189bc9;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    >.container{
+        .navbar-brand{
+            margin-left: 15px;
+            height:auto;
+            padding:30px 30px 30px 15px;
+        }
+    }
+}/*== End Navbar ==*/
+
+
+/*========== Main Content ==========*/
+main{
+    margin-top:-110px;
+    padding:152px 0 50px;
+    background:#0787b5;
+    background: -webkit-linear-gradient(left, #2fbbed , #007fac);
+    background: -o-linear-gradient(right, #2fbbed, #007fac);
+    background: -moz-linear-gradient(right, #2fbbed, #007fac);
+    background: linear-gradient(to right, #2fbbed , #007fac);
+    &.main_blue_bg{
+        color:white;
+    }
+    .main_title{
+        margin-bottom: 5px;
+    }
+    .include_list{
+        margin: 0;
+        padding:0;
+        li{
+            display:inline-block;
+            width:48%;
+            padding-left:20px;
+            background-image:url('../images/bullet.png');
+            background-repeat:no-repeat;
+            background-position: left center;
+            line-height: 22px;
+        }
+    }
+    .cad_logo_cont{
+        margin-top:-30px;
+    }
+    .download_box{
+        box-shadow: 0 0 16px rgba(0,0,0,.26);
+        h3{
+            color:white;
+            background:$orange;
+            padding:10px;
+            margin:0;
+            text-align:center;
+            text-transform: uppercase;
+            font-size:16px;
+            line-height: 24px;              
+            color:$orange;
+        }
+        .box_content{
+            background:white;
+            padding:15px;
+            color:#565656;
+            label{
+                font-size:15px;
+                color:$orange;
+                font-weight:400;
+            }
+            .form-control{
+                border-radius: 2px;
+                background:$orange;
+                color:#fdb898;
+            }
+        }
+    }
+}/*== End Main Content ==*/
+
+
+/*========== Footer ==========*/
+footer{
+    background:#3b3b3b;
+    color:#acacac;
+    padding:32px 0;
+    p{
+        margin: 0;
+    }
+}/*== End Footer ==*/
