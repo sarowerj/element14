@@ -90,7 +90,9 @@
                                         </label>
                                     </div>
                                     <p class="hints">For more information about the Premier Farrell privacy policy, visit: www.farnell.com/privacy </p>
-                                    <button type="submit" class="btn btn-default">Submit</button>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-default btn-orange">Submit</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>

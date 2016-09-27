@@ -26,6 +26,13 @@ h1 {
   h1 .text-upper {
     text-transform: uppercase; }
 
+.btn.btn-orange {
+  background: #e95b1a;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 58px 12px;
+  border: 0px; }
+
 /*========== Navbar ==========*/
 .navbar {
   background: transparent;
@@ -82,7 +89,7 @@ main {
       text-transform: uppercase;
       font-size: 16px;
       line-height: 24px;
-      color: #e95b1a; }
+      color: white; }
     main .download_box .box_content {
       background: white;
       padding: 15px;
@@ -94,7 +101,16 @@ main {
       main .download_box .box_content .form-control {
         border-radius: 2px;
         background: #e95b1a;
+        color: #fdb898;
+        border: 0px; }
+      main .download_box .box_content ::-webkit-input-placeholder {
         color: #fdb898; }
+      main .download_box .box_content .hints {
+        background: #ffeae1;
+        border: 1px solid #ffcdb8;
+        padding: 15px;
+        font-size: 13px;
+        line-height: 16px; }
 
 /*== End Main Content ==*/
 /*========== Footer ==========*/
