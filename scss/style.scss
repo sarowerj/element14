@@ -42,6 +42,76 @@ h1{
     }
 }
 
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; 
+    top: 2px;
+    width: 17px; 
+    height: 17px;
+    border: 1px solid $orange;
+    background: $orange;
+    border-radius: 2px;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: ' ';
+    width: 11px; 
+    height: 11px;
+    border-radius: 2px;
+    position: absolute;
+    top: 5px; 
+    left: 3px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+    background:white;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted $orange;
+}
+
 
 /*========== Navbar ==========*/
 .navbar{
@@ -127,7 +197,7 @@ main{
             .form-control{
                 border-radius: 2px;
                 background:$orange;
-                color:#fdb898;
+                color:white;
                 border:0px;
             }
             ::-webkit-input-placeholder{
@@ -139,6 +209,16 @@ main{
                 padding:15px;
                 font-size: 13px;
                 line-height: 16px;
+            }
+            .checkbox{
+                .full_label{
+                    width:100%;
+                    padding-left: 0;
+                    text-align: justify;
+                    label{
+                        padding-left: 0;
+                    }
+                }
             }
         }
     }
@@ -154,3 +234,55 @@ footer{
         margin: 0;
     }
 }/*== End Footer ==*/
+
+
+
+@media screen and (max-width:991px){
+    main .download_box{
+        max-width: 350px;
+        margin: 50px auto 0;
+    }
+}
+
+@media screen and (max-width:767px){
+    main{
+        padding: 92px 0 50px;
+    }
+    main .cad_logo_cont{
+        margin-top: 50px;
+    }
+    .collapse{
+        display:block;
+    }
+    .navbar > .container .navbar-brand{
+        margin-left: calc(50% - 103px);
+        padding: 10px 30px 10px 15px;
+    }
+    .navbar .navbar-collapse{
+        background:transparent;
+        box-shadow: none;
+        text-align: center;
+        border: 0;
+    }
+    .navbar-default{
+        background: #d1eef9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.31);
+    }
+    .navbar .navbar-collapse .nav{
+        margin: 0 0 10px 0;
+    }
+    
+    footer .footer_logo{
+        text-align: center;
+    }
+    footer .footer_text{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:480px){
+    main .include_list li{
+        width:100%;
+    }
+}
