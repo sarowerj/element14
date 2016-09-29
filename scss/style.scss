@@ -153,6 +153,10 @@ main{
     &.main_blue_bg{
         color:white;
     }
+    >.container{
+        background-image: url('../images/curcite.png');
+        background-repeat: no-repeat;
+    }
     .main_title{
         margin-bottom: 5px;
     }

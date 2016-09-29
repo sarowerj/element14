@@ -131,6 +131,9 @@ main {
   background: linear-gradient(to right, #2fbbed, #007fac); }
   main.main_blue_bg {
     color: white; }
+  main > .container {
+    background-image: url("../images/curcite.png");
+    background-repeat: no-repeat; }
   main .main_title {
     margin-bottom: 5px; }
   main .include_list {
